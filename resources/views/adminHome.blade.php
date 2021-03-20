@@ -92,6 +92,7 @@
                             <th class="column-title">Total expenses</th>
                             <th class="column-title">Total income</th>
                             <th class="column-title">Wallet balance</th>
+                             <th class="column-title">ٌRegisterd Date</th>
                             <th class="bulk-actions" colspan="7">
                               <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
                             </th>
@@ -110,6 +111,7 @@
                             <td class="green ">{{$user->transaction->sum('credit')}} JOD</td>
                             <td class=" red">{{$user->transaction->sum('debit')}} JOD</td>
                             <td class=" ">{{$user->balance}} JOD</td>
+                             <td class=" ">{{$user->created_at->format('Y-m-d')}}</td>
                             
                            
                            
